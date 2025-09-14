@@ -1,0 +1,12 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Extension Test</title>
+<style>body{font:16px system-ui;margin:40px} .box{margin:20px 0}</style>
+<div class="box">
+  <h3>Textarea</h3>
+  <textarea id="ta" rows="5" cols="80">this is a sample sentence to improve.</textarea>
+</div>
+<div class="box" contenteditable="true" style="border:1px solid #ccc;padding:12px;border-radius:8px;min-height:80px">
+  This is a contenteditable area. try selecting some text here to improve.
+</div>
+<iframe srcdoc="<p contenteditable='true'>Text inside an iframe editor. select me.</p>" style="width:100%;height:120px;border:1px solid #ccc"></iframe>

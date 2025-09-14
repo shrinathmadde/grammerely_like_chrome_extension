@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <body style="min-width:280px;font:14px system-ui;padding:12px">
+    <h3 style="margin:0 0 8px">Writer Helper</h3>
+    <label>API key<br><input id="apiKey" type="password" style="width:100%"></label>
+    <div style="height:8px"></div>
+    <label>Model<br><input id="model" placeholder="gpt-4o-mini" style="width:100%"></label>
+    <div style="height:8px"></div>
+    <label>Tone (optional)<br>
+      <select id="tone" style="width:100%">
+        <option value="neutral">Neutral</option>
+        <option value="formal">Formal</option>
+        <option value="friendly">Friendly</option>
+        <option value="concise">Concise</option>
+      </select>
+    </label>
+    <div style="height:8px"></div>
+    <label>Output language (blank = auto)<br><input id="lang" placeholder="e.g., en, de, fr" style="width:100%"></label>
+    <div style="height:12px"></div>
+    <button id="save">Save</button>
+    <span id="status" style="margin-left:8px;color:#666"></span>
+    <p style="margin-top:10px;color:#666">Highlight text → right-click → “Improve writing (LLM)”<br>or select text and click the bubble.</p>
+    <script src="popup.js"></script>
+  </body>
+</html>
